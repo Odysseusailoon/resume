@@ -1,167 +1,156 @@
-#import "/src/chicv.typ": *
+#import "../src/chicv.typ": *
 
 #show: chicv.with(
   margin: (x: 1cm, top: 1.5cm, bottom: 2cm),
   par-padding: (left: 0pt, right: 0pt),
 )
 
-= Chi Zhang
+= Yuxi Zheng
 
 #personal-info(
-  email: "iskyzh@gmail.com",
-  github: "https://github.com/skyzh",
-  website: "https://skyzh.dev",
-  linkedin: "https://www.linkedin.com/in/alex-chi-skyzh/",
-  // x-twitter: "https://twitter.com/iskyzh",
-  // (link: "https://typst.app/", text: "Typst", icon: "t", solid: true),
+  email: "Odysseusailoon@gmail.com",
+  phone: "193-8331-1208",
+  // github: "https://github.com/username",
+  // website: "https://yourwebsite.com",
+  // linkedin: "https://www.linkedin.com/in/username/",
 )
+
+== Introduction
+
+At 25, I'm a senior software engineer with a physics background, fueled by curiosity and a passion for AI. With five years of experience in distributed systems and database kernel development, I specialize in designing large-scale, high-availability infrastructure. My blend of analytical rigor and technical expertise drives innovation in AI and embodied agents, where I focus on creating robust safety frameworks and scalable pipelines to enhance their spatial-temporal understanding, planning, and decision-making in the physical world.
 
 == Education
 
 #cventry(
-  tl: "Carnegie Mellon University",
-  tr: dates(from: "2022/08", to: "2023/12"),
-  bl: "Master of Science in Computer Science, GPA 4.10/4.33",
-  br: "Pittsburgh, PA, USA"
+  tl: "Nanjing University",
+  tr: dates(from: "2016/08", to: "2020/06"),
+  bl: "Bachelor of Science in Physics",
+  br: "China"
 )[
-  - Teaching Assistant for 15-445/645 Database Systems (Fall 2022, Spring 2023, Fall 2023)
-  - Courses: Distributed Systems, Compiler Design, Advanced Database Systems, Deep Learning Systems, etc.
-]
-
-// by default, #cventry will bold top-left text
-#cventry(
-  tl: "Shanghai Jiao Tong University",
-  tr: dates(from: "2018/09", to: "2022/06"),
-  bl: "Bachelor of Engineering in Computer Science and Technology",
-  br: "Shangehai, China"
-)[
-  - GPA 93.80/100, Rank 1/149, National Scholarship 2019 (Top 0.2% national-wide)
-  - A+ Courses: Operating Systems, Computer Architecture, Computer Networks, and 28 others
+  - Courses: PDE, Statistical Physics, Operating Systems, Optics, Quantum Mechanics, Database Systems, Computer Networks, Computational Physics
 ]
 
 == Work Experience
 
-// but you can override the default bold style by passing content blocks
 #cventry(
-  tl: [#link("https://neon.tech")[*Neon*]],
-  tr: dates(from: "2024/02"),
-  bl: [Systems Software Engineer],
-  br: [Remote / Pittsburgh, PA, USA],
-  // you can also override the default padding of content blocks
-  padding: (bottom: -5pt)
-)[]
-
-#cventry(
-  tl: [_... and also_],
-  tr: dates(from: "2023/05", to: "2023/08"),
-  bl: [Software Engineer Intern],
-  br: [Remote / Pittsburgh, PA, USA],
+  tl: "USC Viterbi School & World Engine Startup",
+  tr: dates(from: "2025/01"),
+  bl: "Research Engineer & Funding Engineer",
+  br: "Los Angeles & Santa Clara, CA"
 )[
-  - Neon is a fully-managed PostgreSQL service built on a key-value storage engine with point-to-time recovery support.
-  - *Compaction Strategy Enhancement*. Conducted an in-depth analysis and evaluation of the storage engine to assess performance metrics and storage space efficiency. Implemented the RocksDB-style tiered compaction and improved page reconstruction strategy, which reduced space amplification by 2x and enhanced read-update performance by 20%.
- - *Improved User Adoption on the Edge*. Enhanced the overall reliability of the Neon serverless driver and the control plane proxy. Collaborated closely with the #link("https://github.com/prisma/prisma", [Prisma]) ORM team to integrate the serverless driver into Prisma and ensured compatibility with Vercel Edge Runtime by transitioning the Rust Prisma engine codebase to be WebAssembly-ready.
+  - *Robot Data Agent System (0-1 Development)*: Built comprehensive system using S3, message queues, multi-agent architecture, and GPU framework (Ray) enabling users to create and view various simulated robotics data through natural language prompts
+  - *Large-Scale Dataset Platform (0-1 Development)*: Developed low-latency platform allowing users to select data ranges and types through histogram interface, edit metadata, and download from GCS with robust authentication and seamless latency
+  - *Research Contribution*: Co-authored and submitted paper to CoRL (top robotics learning conference) using state-of-the-art ML models to convert images into robotics data with motion and video
+  - Working with Prof. Yue Wang's research group while simultaneously serving as funding engineer for his robotics data collection company
 ]
 
 #cventry(
-  tl: [#link("https://risingwave.com/", [*RisingWave Labs*])],
-  tr: dates(from: "2021/08", to: "2022/07"),
-  bl: [Database System R&D Intern],
-  br: [Shanghai, China]
+  tl: [*Grab* (Leading Southeast Asia super-app with 44M+ monthly users)],
+  tr: dates(from: "2022/06", to: "2025/01"),
+  bl: [Senior Software Engineer],
+  br: [Singapore]
 )[
-  - *Top contributor of #githublink("https://github.com/risingwavelabs/risingwave", text: "RisingWave")*. RisingWave is a database system with PostgreSQL-compatible interface that incrementally maintains materialized views. Worked on features including streaming index joins, query optimization of stream plans, distributed streaming execution, cloud-native LSM state store, vectorized expression framework.
-  - *Streaming Index Joins*:  Designed shared state and streaming index in RisingWave; implemented index lookup join executor; implemented delta join DAG optimizer transformations; implemented distributed delta join scheduler.
-  - *Performance Improvement*:  Conducted intensive benchmarks and analyzed performance issues. Fixed bugs, proposed strategies, and led cross-team collaboration which improved the system throughput by 10x in a 3-month period.
-  - *Developer Experience*.  Initiated the RiseDev development tool and the developer dashboard, which is deeply integrated into the development workflow across debugging, unit testing, integration testing, and benchmarking.
-  - *Mentoring*. Mentored database kernel interns and helped their successful integration into the team. Maintained overview documents of the database kernel to facilitate knowledge transfer and help new hires learn about the system.
+  - *AI Intelligent Search Platform Assistant*: Led a team of 5 engineers to build an AI-powered assistant for infrastructure platform
+  - Tech Stack: Python, LlamaIndex, ETL tools, Graph DB, OpenAI API, VectorDB, S3, Redis
+  - Designed and implemented multi-agent system supporting semantic caching, context pooling, adaptive RAG, GraphRAG and function calling
+  - Built real-time ETL pipeline for generating and updating Knowledge Graph from structured data
+  - Integrated with Slack API for seamless user experience and enhanced company efficiency
+  - *Redis Expertise*: Recognized as the go-to Redis expert within Grab, specializing in source code level understanding
+  - Developed and maintained widely utilized Redis common library and Hystrix lib, serving all Grab customers and driver partners
+  - Created resilient Redis chaos testing framework using Chaos Mesh, enhancing service reliability
+  - *Automation Platform*: Contributed to microservices system automating infrastructure requests
+  - Built metadata storage for all services and resources, connection management API, and infrastructure resources management system
+  - Used Python, Steampipe, and Event Bridge to build HA system as single source of truth for Grab infrastructure-related metadata
+  - *Leadership*: Founded and chaired Grab's Mental Health Community, organizing wellness initiatives and support programs
 ]
 
 #cventry(
-  tl: "ByteDance",
-  tr: dates(from: "2021/06", to: "2021/08"),
-  bl: "Storage System R&D Intern, TerarkDB Team",
+  tl: "Shopee (Leading Southeast Asia e-commerce with 295M+ active users)",
+  tr: dates(from: "2022/03", to: "2022/05"),
+  bl: "Software Engineer",
+  br: "Singapore"
+)[
+  - Joined data management system development team
+  - Gained experience with Java tech stacks and demonstrated rapid learning abilities
+]
+
+#cventry(
+  tl: "Kingsoft Cloud (Major China cloud provider, serving ByteDance, Bilibili, Xiaomi)",
+  tr: dates(from: "2020/06", to: "2022/01"),
+  bl: "Redis Kernel Developer",
   br: "Beijing, China"
 )[
-  - *Co-Optimized #githublink(text: "TerarkDB", "https://github.com/bytedance/terarkdb")* and *#githublink(text: "ZenFS", "https://github.com/westerndigitalcorporation/zenfs")*. TerarkDB is a fork of RocksDB and ZenFS is a filesystem on Zoned Namespaces (ZNS) SSDs. Implemented Zone-aware Garbage Collection in TerarkDB for ZNS and WAL-Aware Zone Allocator in ZenFS, which reduced 3-4x of space amplification and greatly improved tail latencies caused by zone allocation.
-]
-
-#cventry(
-  tl: "PingCAP",
-  tr: dates(from: "2020/08", to: "2021/01"),
-  bl: "Storage System R&D Intern, TiKV Storage Team",
-  br: "Shanghai, China"
-)[
-  - Built LSM-based storage engine *#githublink("https://github.com/tikv/agatedb", text: "AgateDB")* from ground-up. Inspired by WiscKey and BadgerDB, AgateDB separates large values from the LSM tree into a separate value log, so as to reduce write amplification and improve throughput.
-]
-
-== Open-Source Contributions
-
-#cventry(
-  tl: [
-    *BusTub* #githublink("https://github.com/cmu-db/bustub", text: "cmu-db/bustub") _as Teaching Assistant for Database Systems_
-  ],
-  tr: dates(from: "2022/08", to: "2023/12")
-)[
-  - Lead the development of the BusTub educational database system and course projects in CMU Database Systems course.
- - Added query processing layer to the system with PostgreSQL syntax support. Restructured the query execution project.
- - Added multi-version concurrency control to the system based on HyPer/Umbra undo log version chain implementation.
- - Redesigned course projects to help students better understand the concepts and align with industrial database systems.
- - Developed leaderboard tests to challenge advanced students and enable further study in optimizing database systems.
-]
-
-#cventry(
-  tl: [
-    *RisingLight Maintainer* #githublink("https://github.com/risinglightdb", text: "risinglightdb")
-  ],
-  tr: dates(from: "2022/01")
-)[
-  -  Lead the development of RisingLight, an OLAP database system in Rust for educational purpose. RisingLight supports simple TPC-H queries, and has a merge-tree based columnar storage.
-]
-
-#cventry(
-  tl: [
-    *TiKV Community* #githublink("https://github.com/tikv", text: "tikv")
-  ],
-  tr: dates(from: "2020/05")
-)[
-  - Maintains TiKV Coprocessor, the push-down execution framework of TiDB. Mentored community members to contribute features (e.g. new data types, plugin system) in the *LFX Mentorship*. #iconlink("https://github.com/tikv/tikv/issues/9066")  #iconlink("https://github.com/tikv/tikv/issues/9747")
-]
-
-#cventry(
-  tl: [
-    *Personal Projects* #githublink(text: "skyzh", "https://github.com/skyzh")
-  ],
-  tr: [6.6k followers on GitHub]
-)[
-  - *#githublink(text: "mini-lsm", "https://github.com/skyzh/mini-lsm")* (#fa-icon("star", solid: true) 2k) Build a simple LSM-Tree storage system in Rust in a week
-  - *#githublink(text: "type-exercise-in-rust", "https://github.com/skyzh/mini-lsm")* (#fa-icon("star", solid: true) 1k) Learn Rust generics by implementing a vectorized expression evaluation framework
+  - Investigated Redis offerings across cloud providers (Redis, AWS, Alibaba) and drafted implementation plans for new features
+  - Provided technical support for customers including top-tier companies: Xiaomi, Bilibili, and Bytedance
+  - Led development as core Redis developer, implementing key features: Hybrid Storage, HA Control Thread, and Redis Proxy
+  - Developed deep understanding of Redis source code for effective troubleshooting of production issues
 ]
 
 == Research Experience
 
 #cventry(
-  tl: [*Adaptive Query Optimization Framework* #githublink("https://github.com/cmu-db/optd", text: "cmu-db/optd")],
-  tr: dates(from: "2023/09", to: "2023/12"),
-  bl: [CMU Database Group, advised by Professor Andy Pavlo],
-  br: [Pittsburgh, PA, USA]
+  tl: [*Robot Learning from Any Images (RoLA)*],
+  tr: dates(from: "2025/04", to: "2025/05"),
+  bl: [Data Pipeline Lead - Submitted to CoRL (under review)],
+  br: []
 )[
-  - *Developed optd*, an optimizer framework based on the Columbia Cascades paper targeting real-time OLAP queries.
-  - *Adaptive Optimization*. optd collects statistics during execution and uses runtime data to guide later plan searches.
-  - *Partial Exploration*. optd explores plans by reusing and incrementally expanding the plan space from the last search.
+  - Led development of scalable data pipeline transforming single images into interactive, physics-enabled robotic environments
+  - Built framework enabling massive visuomotor robotic demonstrations generation from camera captures, robotic datasets, and Internet images
+  - Designed novel visual blending strategy for photorealistic data collection combining real images with virtual assets
 ]
 
 #cventry(
- tl: [*PostgreSQL Extension Manager* #githublink("https://github.com/cmu-db/pgextmgrext", text: "cmu-db/pgextmgrext")],
- tr: dates(from: [2023/02], to: [2023/05]),
- bl: [CMU Database Group, advised by Professor Andy Pavlo],
- br:[Pittsburgh, PA, USA]
+  tl: [*Vision-Language Planning Benchmark*],
+  tr: dates(from: "2025/04"),
+  bl: [Co-First Author - Collaboration with UPenn, submitting to AAAI],
+  br: []
 )[
- - *Implemented pgextmgrext*, a PostgreSQL extension that manages other PostgreSQL extensions and provides new APIs to PostgreSQL extension developers that enables them to write new extensions with fewer lines of code.
- - *Integration with PostgreSQL Ecosystem*. Integrated pg_hint_plan with the extension manager. Implemented output rewriter in the extension manager, and based on that, a demo extension pg_poop that rewrites all text to poop emojis.
+  - Co-leading comprehensive benchmark evaluation of VLM zero-shot planning capabilities across multiple models (GPT-4.1, InternVL3, QwenVL2.5, Gemma3)
+  - Developed evaluation pipeline for PDDL generation from visual inputs using scene graph and captioning approaches
+  - Analyzed solver pass rates, plan success rates, and action success rates across Blocksworld and other robotic domains
+]
+
+#cventry(
+  tl: [*Adaptive scalable multi-agent system design*],
+  tr: dates(from: "2024/08", to: "2024/10"),
+  bl: [Researcher & Engineer, Camel AI Community],
+  br: []
+)[
+  - Joined Camel AI community as consulting collaborator focusing on LLM and AI infrastructure
+  - Applied expertise in large-scale distributed systems to research and engineering of adaptive multi-agent systems
+  - Contributed to ongoing research projects and previous paper-related implementations
+]
+
+#cventry(
+  tl: [*Task Scheduling for Edge Computing: Delay-Sensitive Application*],
+  tr: dates(from: "2020/01", to: "2020/06"),
+  bl: [Student, mentored by Prof. Zhuzhong Qian],
+  br: [Nanjing University]
+)[
+  - Designed and implemented algorithm using Lyapunov optimization for job dispatching and data redistribution on edge cloud
+  - Used Markov approximation to solve optimization problem for delay-sensitive applications
 ]
 
 == Skills
 
-- *Programming Languages*: Rust (6 years), C++, Python, Node.js and Golang
-- *Tech Skills*: Stream-Processing Systems, Database Systems (Optimizer and Query Execution), Key-Value Storage Systems, SSD-optimized File System
+*Programming:*
+- PyTorch, CUDA, Golang, C, C++
+
+*Software Engineering Tools & Technologies:*
+- Redis (expert level), Linux kernel, Network, RDS, TiDB, VectorDB, S3, Git, Docker, Kubernetes, ETL, CI/CD pipeline, Datadog, Chaos Mesh
+- Distributed Systems Architecture, Database Kernel Development, High-Availability Infrastructure Design, Scalable System Optimization, Data Processing Pipeline Development, Cloud Computing Platforms (AWS)
+- AI-Powered Development: Proficient use of Cursor, Claude Code, Supabase and Vercel for fast prototyping and deployment
+
+*AI & Robotics Domain Knowledge:*
+- Model and build training pipelines for LLM/VLM/Diffusion models
+- Robotics policies and models: Diffusion policy, ACT, Octo, OpenVLA, PiO
+- Simulation: IsaacSim, IsaacGym
+- PEFT methods (LoRA), MoE, Distributed training, Distributed inference
+
+*Other Skills:*
+- Problem-Solving, Fast Learning and Adaptability, Marketing
+
+*Languages:*
+- English (proficient), Chinese (native)
 
 #align(right, text(fill: gray)[Last Updated on #today()])
