@@ -33,8 +33,21 @@ At 25, I'm a senior software engineer with a physics background, fueled by curio
 == Work Experience
 
 #cventry(
+  tl: "Gradient Network",
+  tr: dates(from: "2025/07/20"),
+  bl: "Research Lead",
+  br: "Remote"
+)[
+  - *Self-Evolving LLM for Production-Grade Systems*: Leading research initiative to develop autonomous AI systems capable of production-level distributed system management
+  - *Research Experiment Design*: Designing comprehensive benchmarks targeting state-of-the-art performance on AIOpsLab (Microsoft), ITBench (Microsoft & UIUC), and NetPress (UIUC)
+  - *Multi-Agent System Architecture*: Building enhanced multi-agent systems with memory and search functionality using AWorld framework for distributed cloud environments
+  - *Production SRE Integration*: Developing systems capable of cluster management, root cause analysis, rollbacks, failovers, and rate limiting for production environments
+  - *Open-World Simulation*: Creating infinite task environments with compositional learning and difficulty curriculum for continuous agent improvement
+]
+
+#cventry(
   tl: "USC Viterbi School & World Engine Startup",
-  tr: dates(from: "2025/01"),
+  tr: dates(from: "2025/01", to: "2025/07"),
   bl: "Research Engineer & Funding Engineer",
   br: "Los Angeles & Santa Clara, CA"
 )[
@@ -91,7 +104,7 @@ At 25, I'm a senior software engineer with a physics background, fueled by curio
 #cventry(
   tl: [*Robot Learning from Any Images (RoLA)*],
   tr: dates(from: "2025/04", to: "2025/05"),
-  bl: [Data Pipeline Lead - Submitted to CoRL (under review)],
+  bl: [Data Pipeline Lead - Accepted by CoRL],
   br: []
 )[
   - Led development of scalable data pipeline transforming single images into interactive, physics-enabled robotic environments
